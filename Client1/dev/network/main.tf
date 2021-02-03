@@ -24,4 +24,8 @@ module "vnet" {
     "10.0.2.0/24"
   ]
   custom_tags = var.custom_tags
+
+  depends_on = [
+    module.rg
+  ]
 }
