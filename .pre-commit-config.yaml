@@ -19,9 +19,7 @@ repos:
       - id: terraform-fmt
       - id: terragrunt-hclfmt
       - id: terraform-validate
-        files: ^examples/
       - id: tflint
-        files: ^examples/
         exclude: .*/README\.md
       - id: gofmt
         files: ^test/
