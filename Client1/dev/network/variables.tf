@@ -37,10 +37,10 @@ variable "custom_rules" {
   default = [
     {
       name                       = "BlockFromInternet"
-      priority                   = 9000
+      priority                   = 4000
       direction                  = "Inbound"
       access                     = "Deny"
-      protocol                   = "all"
+      protocol                   = "*"
       source_address_prefix      = "Internet"
       source_port_range          = "*"
       destination_address_prefix = "*"
