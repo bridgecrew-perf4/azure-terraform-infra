@@ -11,8 +11,9 @@ module "rg" {
 }
 
 module "vnet" {
-  source              = "github.com/k0kazpt/azure-terraform-module-vnet?ref=0.2.1"
+  source              = "github.com/k0kazpt/azure-terraform-module-vnet?ref=0.2.3"
   name                = module.naming.virtual_network.name
+  location            = module.rg.location
   address_space       = var.address_space
   resource_group_name = module.rg.name
   tags                = var.tags
